@@ -4,7 +4,7 @@ metadata:
   creationTimestamp: null
   labels:
     app: samplepythonapp
-  name: samplepythonapp
+  name: samplepythonapp 
 spec:
   type: {{ .Values.service.type }}
   ports:
