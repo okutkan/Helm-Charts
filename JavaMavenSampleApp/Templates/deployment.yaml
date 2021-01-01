@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: simplejavaapp
+  name: simplejavaapp
+spec:
+  #replicas: 1
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: simplejavaapp
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: simplejavaapp
+    spec:
+      containers:
+      - image: {{ .Values.image }}
+        name: simplejavaapp
+        resources: {}
+status: {}
