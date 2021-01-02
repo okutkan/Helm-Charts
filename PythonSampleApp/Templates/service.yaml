@@ -6,11 +6,12 @@ metadata:
     app: samplepythonapp
   name: samplepythonapp 
 spec:
-  type: {{ .Values.service.type }}
+  type: NodePort
   ports:
-  - port: 4000
+  - port: 5000
+    nodePort: 31500
     protocol: TCP
-    targetPort: 4000
+    targetPort: 5000
   selector:
     app: samplepythonapp
 status:

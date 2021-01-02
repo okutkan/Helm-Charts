@@ -19,7 +19,20 @@ spec:
         app: samplepythonapp
     spec:
       containers:
-      - image: {{ .Values.image }}
         name: samplepythonapp
+      - image: {{ .Values.image }}
+        ports:
+        - containerPort: 5000
+        env:
+          - name: MYSQL_USERNAME
+            value: "appuser"
+          - name: MYSQL_PASSWORD
+            value: "apppassword"
+          - name: MYSQL_INSTANCE_NAME
+            value: "main"
+          - name: MYSQL_PORT_3306_TCP_ADDR
+            value: $(SERVICE_MYSQL_SERVICE_HOST)
+          - name: MYSQL_PORT_3306_TCP_PORT
+            value: "3306"
         resources: {}
 status: {}
