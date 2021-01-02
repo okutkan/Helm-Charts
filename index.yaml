@@ -1,0 +1,23 @@
+apiVersion: v1
+entries:
+  samplepythonapp:
+  - apiVersion: v1
+    appVersion: "1"
+    created: "2021-01-02T03:17:06.883393+03:00"
+    description: Sample Python app
+    digest: c90f44b828790791093b6a7ef50a394f875876b7902c9a666b1e42559321c7e3
+    name: samplepythonapp
+    urls:
+    - samplepythonapp-0.1.0.tgz
+    version: 0.1.0
+  simplejavaapp:
+  - apiVersion: v1
+    appVersion: "1"
+    created: "2021-01-02T03:17:06.883593+03:00"
+    description: Simple HelloWorld Java App
+    digest: c76ff61dafac9dc897fe6d23169cfeb51441166d876c66822266748c219a19b6
+    name: simplejavaapp
+    urls:
+    - simplejavaapp-0.1.0.tgz
+    version: 0.1.0
+generated: "2021-01-02T03:17:06.883049+03:00"
