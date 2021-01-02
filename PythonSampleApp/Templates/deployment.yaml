@@ -4,7 +4,8 @@ metadata:
   creationTimestamp: null
   labels:
     app: samplepythonapp
-  name: samplepythonapp 
+  name: samplepythonapp
+  namespace: default 
 spec:
   #replicas: 1
   replicas: {{ .Values.replicaCount }}

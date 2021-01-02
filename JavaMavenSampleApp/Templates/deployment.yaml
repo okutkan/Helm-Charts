@@ -5,6 +5,7 @@ metadata:
   labels:
     app: simplejavaapp
   name: simplejavaapp
+  namespace: default
 spec:
   #replicas: 1
   replicas: {{ .Values.replicaCount }}
