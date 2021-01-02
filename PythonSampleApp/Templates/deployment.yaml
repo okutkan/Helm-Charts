@@ -19,8 +19,8 @@ spec:
         app: samplepythonapp
     spec:
       containers:
-        name: samplepythonapp
-      - image: {{ .Values.image }}
+      - name: samplepythonapp
+        image: {{ .Values.image }}
         ports:
         - containerPort: 5000
         env:
