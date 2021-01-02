@@ -5,6 +5,7 @@ metadata:
   labels:
     app: simplejavaapp
   name: simplejavaapp
+  namespace: {{ .Values.namespace }} 
 spec:
   type: {{ .Values.service.type }}
   ports:

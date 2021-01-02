@@ -5,6 +5,7 @@ metadata:
   labels:
     app: samplepythonapp
   name: samplepythonapp 
+  namespace: {{ .Values.namespace }} 
 spec:
   type: NodePort
   ports:
