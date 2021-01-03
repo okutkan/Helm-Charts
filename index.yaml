@@ -3,7 +3,7 @@ entries:
   mysqlsample:
   - apiVersion: v1
     appVersion: "1"
-    created: "2021-01-03T16:08:42.940898+03:00"
+    created: "2021-01-03T16:22:17.46617+03:00"
     description: Sample Mysql server
     digest: a9eb24844953a08cd9022fa8327079a91e30e4841586d3ddf9d6d9ca6f479a9b
     name: mysqlsample
@@ -13,7 +13,16 @@ entries:
   samplepythonapp:
   - apiVersion: v1
     appVersion: "1"
-    created: "2021-01-03T16:08:42.942103+03:00"
+    created: "2021-01-03T16:22:17.467518+03:00"
+    description: Sample Python app
+    digest: 1000ed81be9367e28a3debb899cfe3a1269769ba1102e55888d82e919f2fc8a0
+    name: samplepythonapp
+    urls:
+    - samplepythonapp-0.3.0.tgz
+    version: 0.3.0
+  - apiVersion: v1
+    appVersion: "1"
+    created: "2021-01-03T16:22:17.467305+03:00"
     description: Sample Python app
     digest: 66002b3925911be21fd41ecafd864472db6d019e2ca9f24136e04f890a1a2cf1
     name: samplepythonapp
@@ -22,7 +31,7 @@ entries:
     version: 0.2.0
   - apiVersion: v1
     appVersion: "1"
-    created: "2021-01-03T16:08:42.941405+03:00"
+    created: "2021-01-03T16:22:17.466746+03:00"
     description: Sample Python app
     digest: c90f44b828790791093b6a7ef50a394f875876b7902c9a666b1e42559321c7e3
     name: samplepythonapp
@@ -32,11 +41,11 @@ entries:
   simplejavaapp:
   - apiVersion: v1
     appVersion: "1"
-    created: "2021-01-03T16:08:42.942548+03:00"
+    created: "2021-01-03T16:22:17.467935+03:00"
     description: Simple HelloWorld Java App
     digest: c593c79efcd51593baa17e43c318a9ab14f5bc5061f7eb39e166052aa3c140df
     name: simplejavaapp
     urls:
     - simplejavaapp-0.1.0.tgz
     version: 0.1.0
-generated: "2021-01-03T16:08:42.939021+03:00"
+generated: "2021-01-03T16:22:17.465202+03:00"
