@@ -1,6 +1,6 @@
 replicaCount: 1
 imageName: imagename 
-namespace: app
+namespace: default
 mysqluser: "appuser"
 mysqlpassword: "apppassword"
 mysqldb: "main"
