@@ -24,15 +24,15 @@ spec:
         ports:
         - containerPort: 3000
         env:
-        - name: MYSQL_USERNAME
-          value: {{ .Values.mysqluser }} 
-        - name: MYSQL_PASSWORD
-          value: {{ .Values.mysqlpassword }} 
-        - name: MYSQL_INSTANCE_NAME
-          value: {{ .Values.mysqldb }} 
-        - name: MYSQL_PORT_3306_TCP_ADDR
-          value: {{ .Values.mysqlip }}
-        - name: MYSQL_PORT_3306_TCP_PORT
-          value: {{ .Values.mysqlport }}
+          - name: MYSQL_USERNAME
+            value: {{ .Values.mysqluser }} 
+          - name: MYSQL_PASSWORD
+            value: {{ .Values.mysqlpassword }} 
+          - name: MYSQL_INSTANCE_NAME
+            value: {{ .Values.mysqldb }} 
+          - name: MYSQL_PORT_3306_TCP_ADDR
+            value: {{ .Values.mysqlip }}
+          - name: MYSQL_PORT_3306_TCP_PORT
+            value: {{ .Values.mysqlport }}
         resources: {}
 status: {}
