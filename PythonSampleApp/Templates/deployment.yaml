@@ -18,12 +18,12 @@ spec:
         app: samplepythonapp
     spec:
       containers:
-      - name: samplepythonapp
-        image: okutkan/pythonsampleapp
+      - image: okutkan/pythonsampleapp
+        name: samplepythonapp
         imagePullPolicy: Never
         ports:
         - containerPort: 3000
-      - env:
+        env:
         - name: MYSQL_USERNAME
           value: {{ .Values.mysqluser }} 
         - name: MYSQL_PASSWORD
