@@ -1,5 +1,5 @@
 replicaCount: 1
-imageName: imagename 
+imageName: okutkan/pythonsampleapp 
 namespace: default
 mysqluser: "appuser"
 mysqlpassword: "apppassword"
