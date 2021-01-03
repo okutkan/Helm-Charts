@@ -19,8 +19,8 @@ spec:
     spec:
       containers:
       - name: samplepythonapp
-        image:
-          repository: okutkan/pythonsampleapp
+        image: okutkan/pythonsampleapp
+        imagePullPolicy: Never
         ports:
         - containerPort: 3000
         env:
