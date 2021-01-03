@@ -33,6 +33,6 @@ spec:
           - name: MYSQL_PORT_3306_TCP_ADDR
             value: {{ .Values.mysqlip }}
           - name: MYSQL_PORT_3306_TCP_PORT
-            value: {{ .Values.3306 }}
+            value: {{ .Values.mysqlport }}
         resources: {}
 status: {}

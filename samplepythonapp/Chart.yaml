@@ -1,5 +1,0 @@
-apiVersion: v1
-appVersion: "1"
-description: Sample Python app
-name: samplepythonapp
-version: 0.5.0
