@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
       - name: samplepythonapp
-        image: {{ .Values.image }}
+        image: okutkan/pythonsampleapp
         ports:
         - containerPort: 3000
         env:
