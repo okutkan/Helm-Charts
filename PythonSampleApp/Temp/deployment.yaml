@@ -5,10 +5,10 @@ metadata:
   labels:
     app: samplepythonapp
   name: samplepythonapp
-  namespace: {{ .Values.namespace }} 
+  namespace: default
 spec:
   #replicas: 1
-  replicas: {{ .Values.replicaCount }}
+  replicas: 1
   selector:
     matchLabels:
       app: samplepythonapp
@@ -26,14 +26,14 @@ spec:
         - containerPort: 3000
         env:
           - name: MYSQL_USERNAME
-            value: {{ .Values.mysqluser }} 
+            value: "appuser"
           - name: MYSQL_PASSWORD
-            value: {{ .Values.mysqlpassword }} 
+            value: "apppassword"
           - name: MYSQL_INSTANCE_NAME
-            value: {{ .Values.mysqldb }} 
+            value: "main"
           - name: MYSQL_PORT_3306_TCP_ADDR
-            value: {{ .Values.mysqlip }}
+            value: $(SERVICE_MYSQL_SERVICE_HOST)
           - name: MYSQL_PORT_3306_TCP_PORT
-            value: {{ .Values.3306 }}
+            value: "3306"
         resources: {}
 status: {}
