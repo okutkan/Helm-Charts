@@ -3,7 +3,7 @@ entries:
   mysqlsample:
   - apiVersion: v1
     appVersion: "1"
-    created: "2021-01-03T22:57:23.009999+03:00"
+    created: "2021-01-03T23:06:24.487797+03:00"
     description: Sample Mysql server
     digest: a9eb24844953a08cd9022fa8327079a91e30e4841586d3ddf9d6d9ca6f479a9b
     name: mysqlsample
@@ -12,8 +12,17 @@ entries:
     version: 0.1.0
   samplepythonapp:
   - apiVersion: v1
+    appVersion: 0.1.0
+    created: "2021-01-03T23:06:24.490761+03:00"
+    description: Sample Python app
+    digest: b05bd63ad8d0994ab12e3534e771c7eacb84a9a09cb39eac3153b4eee901dc20
+    name: samplepythonapp
+    urls:
+    - samplepythonapp-0.7.0.tgz
+    version: 0.7.0
+  - apiVersion: v1
     appVersion: "1"
-    created: "2021-01-03T22:57:23.011204+03:00"
+    created: "2021-01-03T23:06:24.490541+03:00"
     description: Sample Python app
     digest: 639f7566a0e64805c84f94053430eed26cc6c2b1df0fdf23617127b390e96d01
     name: samplepythonapp
@@ -22,7 +31,7 @@ entries:
     version: 0.6.0
   - apiVersion: v1
     appVersion: "1"
-    created: "2021-01-03T22:57:23.011022+03:00"
+    created: "2021-01-03T23:06:24.490313+03:00"
     description: Sample Python app
     digest: e56228cf56e0fae4c84bd9606058194981873ff6a9f4fae04db5f2a981af8788
     name: samplepythonapp
@@ -31,7 +40,7 @@ entries:
     version: 0.5.0
   - apiVersion: v1
     appVersion: "1"
-    created: "2021-01-03T22:57:23.010781+03:00"
+    created: "2021-01-03T23:06:24.489954+03:00"
     description: Sample Python app
     digest: 18a8e8513dcace74652f9c5fecdcdd68fd6826372e994ae27f8e95b27810f591
     name: samplepythonapp
@@ -40,7 +49,7 @@ entries:
     version: 0.4.0
   - apiVersion: v1
     appVersion: "1"
-    created: "2021-01-03T22:57:23.010603+03:00"
+    created: "2021-01-03T23:06:24.488965+03:00"
     description: Sample Python app
     digest: 1000ed81be9367e28a3debb899cfe3a1269769ba1102e55888d82e919f2fc8a0
     name: samplepythonapp
@@ -49,7 +58,7 @@ entries:
     version: 0.3.0
   - apiVersion: v1
     appVersion: "1"
-    created: "2021-01-03T22:57:23.010387+03:00"
+    created: "2021-01-03T23:06:24.488328+03:00"
     description: Sample Python app
     digest: 66002b3925911be21fd41ecafd864472db6d019e2ca9f24136e04f890a1a2cf1
     name: samplepythonapp
@@ -58,7 +67,7 @@ entries:
     version: 0.2.0
   - apiVersion: v1
     appVersion: "1"
-    created: "2021-01-03T22:57:23.010205+03:00"
+    created: "2021-01-03T23:06:24.488047+03:00"
     description: Sample Python app
     digest: c90f44b828790791093b6a7ef50a394f875876b7902c9a666b1e42559321c7e3
     name: samplepythonapp
@@ -68,11 +77,11 @@ entries:
   simplejavaapp:
   - apiVersion: v1
     appVersion: "1"
-    created: "2021-01-03T22:57:23.011364+03:00"
+    created: "2021-01-03T23:06:24.490924+03:00"
     description: Simple HelloWorld Java App
     digest: c593c79efcd51593baa17e43c318a9ab14f5bc5061f7eb39e166052aa3c140df
     name: simplejavaapp
     urls:
     - simplejavaapp-0.1.0.tgz
     version: 0.1.0
-generated: "2021-01-03T22:57:23.009702+03:00"
+generated: "2021-01-03T23:06:24.487282+03:00"

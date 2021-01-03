@@ -4,5 +4,5 @@ namespace: default
 mysqluser: "appuser"
 mysqlpassword: "apppassword"
 mysqldb: "main"
-mysqlip: 127.0.0.1
-mysqlport: 3306
+mysqlip: "127.0.0.1"
+mysqlport: "3306"
