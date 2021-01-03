@@ -1,7 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  creationTimestamp: null
   labels:
     app: samplepythonapp
   name: samplepythonapp
@@ -15,13 +14,13 @@ spec:
   strategy: {}
   template:
     metadata:
-      creationTimestamp: null
       labels:
         app: samplepythonapp
     spec:
       containers:
       - name: samplepythonapp
-        image: okutkan/pythonsampleapp
+        image:
+          repository: okutkan/pythonsampleapp
         ports:
         - containerPort: 3000
         env:
