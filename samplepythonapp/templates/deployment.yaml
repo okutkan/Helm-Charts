@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: samplepythonapp
+  name: samplepythonapp
+  namespace: {{ .Values.namespace }} 
+spec:
+  #replicas: 1
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: samplepythonapp
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: samplepythonapp
+    spec:
+      containers:
+      - name: samplepythonapp
+        image: okutkan/pythonsampleapp
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 3000
+        env:
+          - name: MYSQL_USERNAME
+            value: {{ .Values.mysqluser }} 
+          - name: MYSQL_PASSWORD
+            value: {{ .Values.mysqlpassword }} 
+          - name: MYSQL_INSTANCE_NAME
+            value: {{ .Values.mysqldb }} 
+          - name: MYSQL_PORT_3306_TCP_ADDR
+            value: {{ .Values.mysqlip }}
+          - name: MYSQL_PORT_3306_TCP_PORT
+            value: {{ .Values.3306 }}
+        resources: {}
+status: {}
